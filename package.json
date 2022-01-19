@@ -1,0 +1,56 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "tencent-cloud",
+  "title": "Tencent Cloud",
+  "description": "",
+  "icon": "tencent-cloud.png",
+  "author": "co1in9",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "cdn_domains",
+      "title": "CDN Domains",
+      "icon": "cdn.png",
+      "subtitle": "List Tencent CDN domains",
+      "description": "List Tencent CDN domains",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.27.0",
+    "tencentcloud-sdk-nodejs": "^4.0.276"
+  },
+  "devDependencies": {
+    "@types/node": "~16.10.0",
+    "@types/react": "^17.0.28",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "react-devtools": "^4.19.2",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "lint": "ray lint"
+  },
+  "preferences": [
+    {
+      "name": "secretId",
+      "type": "textfield",
+      "required": true,
+      "title": "Secret ID",
+      "description": "Tencent Cloud Access Key ID",
+      "placeholder": ""
+    },
+    {
+      "name": "secretKey",
+      "type": "textfield",
+      "required": true,
+      "title": "Secret Key",
+      "description": "Tencent Cloud Access Key Secret",
+      "placeholder": ""
+    }
+  ]
+}
